@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvAluno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Nome do Aluno:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edAluno"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/tvAluno"
+        app:layout_constraintTop_toBottomOf="@+id/tvAluno">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputAluno"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:hint="Insira o nome" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Área de Escolha:"
+        app:layout_constraintStart_toStartOf="@+id/edAluno"
+        app:layout_constraintTop_toBottomOf="@+id/edAluno" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edArea"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/tvArea"
+        app:layout_constraintTop_toBottomOf="@+id/tvArea">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/InputArea"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:hint="Insira a área" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnInserir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Inserir"
+        app:layout_constraintBottom_toBottomOf="@+id/edArea"
+        app:layout_constraintEnd_toEndOf="@+id/edAluno"
+        app:layout_constraintStart_toEndOf="@+id/edArea"
+        app:layout_constraintTop_toTopOf="@+id/edArea" />
+
+    <ListView
+        android:id="@+id/listViewAlunos"
+        android:layout_width="410dp"
+        android:layout_height="377dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edArea">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/tvAlunos"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_marginBottom="8dp"
+        android:text="Alunos: 0"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnZerar"
+        tools:layout_editor_absoluteX="141dp" />
+
+    <Button
+        android:id="@+id/btnZerar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:text="Zerar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="120dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
