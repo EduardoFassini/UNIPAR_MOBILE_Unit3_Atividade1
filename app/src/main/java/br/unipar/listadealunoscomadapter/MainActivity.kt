@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     private val listaDeAlunos = mutableListOf<AlunosAdapter>()
     private lateinit var adapter : AdapterLista
-   // private lateinit var adapter: ArrayAdapter<String>
+    // private lateinit var adapter: ArrayAdapter<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
