@@ -51,7 +51,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvArea">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/InputArea"
+            android:id="@+id/inputArea"
             android:layout_width="270dp"
             android:layout_height="wrap_content"
             android:hint="Insira a área" />

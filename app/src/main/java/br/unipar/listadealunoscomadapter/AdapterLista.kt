@@ -1,4 +1,4 @@
-package br.unipar.listadealunoscomadapter.Adapter
+package br.unipar.listadealunoscomadapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,8 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
-import br.unipar.listadealunoscomadapter.Aluno.AlunosAdapter
-import br.unipar.listadealunoscomadapter.R
 
 class AdapterLista  (
     private val context: Context,
